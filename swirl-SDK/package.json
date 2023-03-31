@@ -1,0 +1,39 @@
+{
+  "name": "hainabolo",
+  "version": "1.0.4",
+  "description": "A package that displays an advertisement fetched from an API",
+  "main": "dist/hainabolo.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/hainabolo.git"
+  },
+  "keywords": [
+    "advertisement",
+    "api",
+    "vanilla-js",
+    "npm-package"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/hainabolo/issues"
+  },
+  "homepage": "https://github.com/your-username/hainabolo#readme",
+  "dependencies": {
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.62.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "html-webpack-plugin": "^5.5.0"
+  }
+}

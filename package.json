@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@safe-global/safe-core-sdk": "^3.3.2",
+    "@safe-global/safe-ethers-lib": "^1.9.2"
+  }
+}

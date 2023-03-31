@@ -1,0 +1,254 @@
+@mixin flexing {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.advNavMain {
+  color: var(--text-color);
+  width: 98%;
+  font-family: var(--font2-bold);
+  padding: 20px 0;
+  margin: 10px auto;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--pink),
+    var(--blue),
+    var(--yellow)
+  );
+  border-radius: 20px;
+
+  .advNavHolder {
+    @include flexing;
+    padding: 10px 10px;
+    height: 20px;
+    .advNavLeft {
+      flex-grow: 1;
+    }
+
+    .advNavRight {
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        li {
+          background-color: var(--purple);
+          padding: 10px;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: var(--pink);
+          }
+        }
+      }
+    }
+  }
+}
+
+li.Active {
+  background-color: var(--pink) !important;
+}
+
+.pubDashboardMain {
+  .pubTopBox {
+    width: 98%;
+    // min-height: 200px;
+    margin: 60px auto 0 auto;
+    border-radius: 20px;
+    border: 1px solid var(--pink);
+    // background: linear-gradient(to right, var(--pink), var(--purple), var(--yellow), var(--blue));
+    // backdrop-filter: blur(20px);
+    box-shadow: -1px -1px 10px 2px var(--pink);
+    height: auto;
+
+    .pubHeader {
+      font-size: 25px;
+      font-family: var(--font1);
+      background: linear-gradient(to right, var(--yellow), var(--blue));
+      margin-top: -38px;
+      margin-left: 30px;
+      padding: 2.5px 5px;
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid var(--pink);
+      border-left: 1px solid var(--pink);
+      border-right: 1px solid var(--pink);
+      position: absolute;
+      border-radius: 5px;
+      // z-index: 25;
+    }
+
+    .pubInner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+      gap: 20px;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+
+      .pubCard {
+        width: 300px;
+        height: 150px;
+        margin: 0 auto;
+        background: linear-gradient(
+          to right,
+          var(--yellow),
+          var(--blue),
+          var(--purple)
+        );
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        // flex-wrap: wrap;
+        flex-direction: column;
+
+        .pubTitle {
+          font-family: var(--font1);
+          font-size: 30px;
+          text-align: center;
+          height: 50%;
+        }
+
+        .pubValue {
+          height: 50%;
+          font-family: var(--font2-bold);
+          font-size: 40px;
+        }
+
+        .pubDepoBtn {
+          height: fit-content;
+          width: fit-content;
+          padding: 5px 10px 5px 10px;
+          margin: 0 auto;
+          background-color: var(--pink);
+          color: white;
+          border-radius: 10px;
+          border: none;
+          font-size: 15px;
+          font-weight: 550;
+          font-family: var(--font2-bold);
+          margin-bottom: 10px;
+        }
+
+        .pubPopupMain {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+        }
+
+        .pubPopupLabel {
+          font-size: 30px;
+          text-align: center;
+          font-family: var(--font1);
+          margin: 10px;
+        }
+
+        .pubPopupInput {
+          margin: 0 auto 30px auto;
+          width: 250px;
+          height: 30px;
+          // font-family: var(--font1);
+        }
+
+        .pubPopupBtn {
+          height: fit-content;
+          width: fit-content;
+          padding: 10px;
+          margin: 0 auto;
+          background-color: var(--purple);
+          color: white;
+          border-radius: 10px;
+          border: none;
+          font-size: 20px;
+          font-weight: 550;
+          font-family: var(--font2-bold);
+        }
+      }
+    }
+  }
+  .pubGraphBox {
+    @include flexing;
+    width: 98%;
+    border: 1px solid var(--pink);
+    margin: 30px auto;
+    border-radius: 20px;
+    height: 500px;
+    box-shadow: -1px -1px 10px 2px var(--pink);
+
+    .pubCampaignsList {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow: scroll;
+      max-height: 400px;
+
+      .pubCampaignSingle {
+        height: fit-content;
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+        background-color: var(--blue);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        font-weight: 550;
+        font-family: var(--font2-bold);
+      }
+
+      .pubCampaignName {
+        text-align: center;
+        font-family: var(--font1);
+        font-size: 30px;
+      }
+
+      .pubCampaignMainData {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+      }
+
+      .pubCampaignDataOuter {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .pubCampaignDataLabel {
+        font-size: 20px;
+      }
+
+      .pubCampaignDataValue {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .pubCampaignDataBtn {
+        height: fit-content;
+        width: fit-content;
+        padding: 5px 10px 5px 10px;
+        margin: 0 auto;
+        background-color: var(--yellow);
+        color: black;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        font-weight: 550;
+        font-family: var(--font2-bold);
+        margin-bottom: 10px;
+      }
+    }
+
+    .pubGraphContainer {
+      flex: 1 1 auto;
+    }
+  }
+}

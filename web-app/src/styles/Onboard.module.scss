@@ -1,0 +1,193 @@
+.onboardMain {
+  background-image: url("/static/picture-bg.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 100vh;
+  // object-fit: contain;
+  background-size: cover;
+  width: 100%;
+  padding-top: 200px;
+
+  .onboardHeader {
+    font-size: 35px;
+    font-family: var(--font1);
+    text-align: center;
+    // padding-top: 200px;
+    // backdrop-filter: blur(100px);
+  }
+
+  .onboardOuter {
+    // padding-top: 200px;
+    backdrop-filter: blur(20px);
+    width: 60%;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  .onboardInner {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    .left {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      .advCard {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 70px;
+        width: 160px;
+        padding: 30px;
+        text-align: center;
+        background-color: var(--pink);
+        border-radius: 10px;
+
+        &:hover {
+          background-color: var(--purple);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin: 0 auto;
+
+      .pubCard {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 70px;
+        width: 160px;
+        padding: 35px;
+        text-align: center;
+        background-color: var(--pink);
+        border-radius: 10px;
+
+        &:hover {
+          background-color: var(--purple);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2561px) {
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .onboardMain {
+    background-image: url("/static/picture-bg.png");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 100vh;
+    // object-fit: contain;
+    background-size: cover;
+    width: 100%;
+
+    .onboardHeader {
+      font-size: 20px;
+      font-family: var(--font1);
+      text-align: center;
+      padding-top: 200px;
+    }
+
+    .onboardInner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      height: 400px;
+      width: 60%;
+      margin: 0 auto;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      margin-top: 50px;
+
+      .left {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        .advCard {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          flex-wrap: wrap;
+          height: 70px;
+          width: 160px;
+          padding: 30px;
+          text-align: center;
+          background-color: var(--pink);
+          border-radius: 10px;
+          margin-bottom: 50px;
+
+          &:hover {
+            background-color: var(--purple);
+            cursor: pointer;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+
+        .pubCard {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          flex-wrap: wrap;
+          height: 70px;
+          width: 160px;
+          padding: 35px;
+          text-align: center;
+          background-color: var(--pink);
+          border-radius: 10px;
+
+          &:hover {
+            background-color: var(--purple);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

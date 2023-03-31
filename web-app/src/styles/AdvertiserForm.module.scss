@@ -1,0 +1,235 @@
+.AdvFormMain {
+  background-image: url("/static/picture-bg.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  font-family: var(--font2-bold);
+
+  .advFormInner {
+    width: 410px;
+    margin: 0 auto;
+
+    .advFormHeader {
+      font-size: 30px;
+      text-align: center;
+      margin-left: 12%;
+      width: 100%;
+      // padding-top: 80px;
+      font-family: var(--font2-bold);
+      padding-bottom: 10px;
+    }
+
+    .advFormInnerMain {
+      background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--blue),
+        var(--yellow)
+      );
+      border-radius: 10px;
+      // margin-top: 30px;
+      height: 880px;
+      width: 500px;
+      // margin-bottom: 50px;
+    }
+
+    #firstDiv {
+      // margin-top: 60px;
+      // padding: 10px 0;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+
+    div {
+      // padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+
+      label {
+        flex-grow: 1;
+        width: 300px;
+        font-size: 25px;
+        // text-align: right;
+        margin-right: 20px;
+        white-space: nowrap;
+        font-family: var(--font1);
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="file"],
+      select {
+        font-size: 15px;
+        padding: 10px;
+        width: 350px;
+        resize: none;
+        border-radius: 10px;
+        border: none;
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      textarea {
+        font-size: 15px;
+        padding: 10px;
+        width: 350px;
+        resize: none;
+        height: 120px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .submitForm {
+        height: -moz-fit-content;
+        height: fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: var(--purple);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        font-weight: 550;
+        font-family: var(--font2-bold);
+        margin-top: 10px;
+        cursor: pointer;
+
+        &:hover {
+          border: 1px solid var(--text-color);
+          background-color: var(--pink);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2561px) {
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .AdvFormMain {
+    width: 160vw;
+
+    .advFormInner {
+      width: 410px;
+      margin: 0 auto;
+
+      .advFormHeader {
+        margin-left: 1%;
+        padding-bottom: 50px;
+      }
+
+      .advFormInnerMain {
+        background: linear-gradient(
+          to right,
+          var(--purple),
+          var(--blue),
+          var(--yellow)
+        );
+        border-radius: 10px;
+        margin-top: 30px;
+        height: 1100px;
+        width: 400px;
+        margin-bottom: 50px;
+        margin: 0 auto;
+      }
+
+      #firstDiv {
+        // margin-top: 60px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+      }
+
+      div {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        label {
+          flex-grow: 1;
+          width: 300px;
+          font-size: 25px;
+          // text-align: right;
+          margin-right: 20px;
+          white-space: nowrap;
+          font-family: var(--font1);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        select {
+          font-size: 15px;
+          padding: 10px;
+          width: 350px;
+          resize: none;
+          border-radius: 10px;
+          border: none;
+          background-color: #ffffff;
+          color: #000000;
+        }
+
+        textarea {
+          font-size: 15px;
+          padding: 10px;
+          width: 350px;
+          resize: none;
+          height: 120px;
+          border-radius: 10px;
+          border: none;
+        }
+
+        .submitForm {
+          height: -moz-fit-content;
+          height: fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          padding: 10px;
+          margin: 0 auto;
+          background-color: var(--yellow);
+          color: white;
+          border-radius: 10px;
+          border: none;
+          font-size: 20px;
+          font-weight: 550;
+          font-family: var(--font2-bold);
+
+          &:hover {
+            border: 1px solid var(--text-color);
+            background-color: var(--pink);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/web-app/node_modules
+/swirl-package/node_modules
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/web-app/.pnp
+/web-app/.pnp.js
+/web-app/.env
+
+# testing
+/web-app/coverage
+
+# next.js
+/web-app/.next/
+/web-app/out/
+
+# production
+/web-app/build
+
+# misc
+/web-app/.DS_Store
+/web-app/*.pem
+
+# debug
+/web-app/npm-debug.log*
+/web-app/yarn-debug.log*
+/web-app/yarn-error.log*
+/web-app/.pnpm-debug.log*
+
+# local env files
+/web-app/.env*.local
+
+# vercel
+/web-app/.vercel
+
+# typescript
+/web-app/*.tsbuildinfo
+/web-app/next-env.d.ts

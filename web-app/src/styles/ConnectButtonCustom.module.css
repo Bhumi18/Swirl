@@ -1,0 +1,71 @@
+.cntBtn {
+  padding: 10px;
+  font-family: var(--font2-light);
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid transparent;
+  background-color: var(--pink);
+  color: var(--text-color);
+}
+
+.cntBtn:hover {
+  animation: changeColor 5s ease-in infinite;
+  cursor: pointer;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: var(--purple);
+  }
+  50% {
+    background-color: var(--yellow);
+  }
+  100% {
+    background-color: var(--blue);
+  }
+}
+
+.cntdBtn {
+  width: 150px;
+  padding: 10px;
+  font-family: var(--font2-light);
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid transparent;
+  background-color: var(--purple);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.cntdBtn:hover::before {
+  font-weight: 900;
+  content: "NEXT";
+  position: static;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.cntdBtn:hover span {
+  display: none;
+}
+
+.cntdBtn::before {
+  content: "\2192";
+  color: var(--yellow);
+  font-size: 30px;
+  position: absolute;
+  margin-left: -40px;
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    margin-left: -50px;
+  }
+  50% {
+    margin-left: -40px;
+  }
+  100% {
+    margin-left: -50px;
+  }
+}

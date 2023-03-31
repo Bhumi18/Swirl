@@ -1,0 +1,473 @@
+/*------------------- LANDING PAGE -----------------------------*/
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  width: 95%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.bgContent {
+  background-image: url("/static/Picture.svg");
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.gradient2 {
+  background-image: url("/static/gradient2.svg");
+  position: fixed;
+  bottom: 0;
+  /* z-index: 1111 !important; */
+  right: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.logo .main {
+  width: 150px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.logo .btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.cntBtn {
+  padding: 10px;
+  font-family: var(--font2-light);
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid transparent;
+  background-color: var(--pink);
+  color: var(--text-color);
+}
+
+.cntBtn:hover {
+  animation: changeColor 5s ease-in infinite;
+  cursor: pointer;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: var(--purple);
+  }
+  50% {
+    background-color: var(--yellow);
+  }
+  100% {
+    background-color: var(--blue);
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.hero .heading {
+  font-size: 80px;
+  padding-top: 180px;
+  padding-bottom: 40px;
+}
+
+.hero .heading span:first-child {
+  color: var(--pink);
+}
+
+.hero .heading span:nth-child(2) {
+  color: var(--purple);
+}
+
+.hero .heading span:nth-child(4) {
+  color: var(--blue);
+}
+
+.hero .heading span:nth-child(5) {
+  color: var(--yellow);
+}
+
+.hero .tagline {
+  text-align: center;
+  font-size: 50px;
+  width: 560px;
+}
+
+.hero .btnHolder {
+  padding-top: 30px;
+}
+
+.advSection {
+  height: 100vh;
+  /* background-image: url("../../public/static/Main-bg.png"); */
+  object-fit: cover;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.advSection .advMain {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.advSection .advLeft {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.advSection .advLeft .illustrator {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.advSection .advLeft .img {
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+  z-index: 100;
+  margin-top: 100px;
+}
+
+.advSection .advLeft .bg {
+  top: 100px;
+  z-index: -1;
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  margin-left: -100px;
+  object-fit: contain;
+  transform: scale(1.25);
+}
+.advSection .advRight {
+  width: 50%;
+  font-size: 35px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.advSection .advRight .title {
+  font-family: "NATS";
+  font-size: 60px;
+  width: 400px;
+  line-height: 60px;
+}
+
+.advSection .advRight .description {
+  font-family: "NATS";
+  font-size: 20px;
+  width: 400px;
+  margin-top: 60px;
+}
+
+.advSection .advRight .kBtn {
+  margin-top: 20px;
+}
+
+.advSection .advRight .kBtn .knowMore {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+
+.pubSection {
+  height: 100vh;
+  /* background-image: url("../../public/static/Main-bg.png"); */
+  object-fit: cover;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.pubSection .pubMain {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.pubSection .pubLeft {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.pubSection .pubLeft .illustrator {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.pubSection .pubLeft .img {
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+  z-index: 100;
+  margin-top: 100px;
+}
+
+.pubSection .pubLeft .bg {
+  top: 100px;
+  z-index: -1;
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  margin-left: -100px;
+  object-fit: contain;
+  transform: scale(1.25);
+}
+.pubSection .pubRight {
+  width: 50%;
+  font-size: 35px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 150px;
+  /* margin-left: 200px; */
+}
+
+.pubSection .pubRight .title {
+  font-family: "NATS";
+  font-size: 60px;
+  width: 400px;
+  line-height: 60px;
+}
+
+.pubSection .pubRight .description {
+  font-family: "NATS";
+  font-size: 20px;
+  width: 400px;
+  margin-top: 60px;
+}
+
+.pubSection .pubRight .kBtn {
+  margin-top: 20px;
+}
+
+.pubSection .pubRight .kBtn .knowMore {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--dark);
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+  font-family: "q-regular";
+}
+
+.footer .copyRight {
+  flex-grow: 1;
+}
+
+.footer .handles {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer .handles .icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1290px) {
+  .hero {
+    height: auto;
+    margin-bottom: 200px;
+  }
+
+  .advSection {
+    height: unset !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .advMain {
+    display: block !important;
+    grid-column: auto;
+    width: 60%;
+    margin: 0 auto !important;
+  }
+
+  .advSection .advMain .advRight {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    margin-top: 200px !important;
+    padding: 20px 20px 40px 20px !important;
+    margin-left: unset !important;
+  }
+
+  .advSection .advMain .advRight .title,
+  .advSection .advMain .advRight .description {
+    width: 100%;
+  }
+
+  .advSection .advLeft {
+    width: unset !important;
+  }
+
+  .pubSection {
+    height: unset !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pubMain {
+    display: block !important;
+    grid-column: auto;
+    width: 60%;
+    margin: 0 auto !important;
+  }
+
+  .pubSection .pubMain .pubRight {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    margin-top: 200px !important;
+    padding: 20px 20px 40px 20px !important;
+    margin-left: unset !important;
+    text-align: center !important;
+  }
+
+  .pubSection .pubMain .pubRight .title,
+  .pubSection .pubMain .pubRight .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pubSection .pubLeft {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 2561px) {
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .landing {
+    width: fit-content;
+  }
+
+  .hero .tagline {
+    font-size: 45px;
+  }
+
+  .advSection .advLeft .img {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    z-index: 100;
+    margin-top: 100px;
+  }
+
+  .advSection .advLeft .bg {
+    top: 100px;
+    z-index: -1;
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    margin-left: -100px;
+    object-fit: contain;
+    transform: scale(1.25);
+  }
+}

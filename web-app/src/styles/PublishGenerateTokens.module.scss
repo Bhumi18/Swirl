@@ -1,0 +1,53 @@
+.genMain {
+    margin-top: 100px;
+    .genOuter {
+      background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--blue),
+        var(--yellow)
+      );
+      height: 600px;
+      width: 600px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  
+    .genHeader {
+      padding: 10px;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      font-family: var(--font2-bold);
+    }
+  
+    .genContent {
+      display: block;
+      width: -moz-fit-content;
+      margin-bottom: 8px;
+      font-family: var(--font1);
+      font-size: 25px;
+      text-align: left;
+      margin: 10px;
+    }
+  
+    .genBtn {
+      height: fit-content;
+      width: fit-content;
+      padding: 10px;
+      background-color: var(--purple);
+      color: white;
+      border-radius: 10px;
+      border: none;
+      font-size: 20px;
+      width: -moz-fit-content;
+      font-weight: 550;
+      font-family: var(--font2-bold);
+      // margin: 0 auto;
+      margin-left: 40%;
+    }
+  
+    .genBtn:hover {
+      background-color: var(--pink);
+    }
+  }
